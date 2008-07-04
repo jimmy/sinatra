@@ -1463,8 +1463,8 @@ end
 
 class Proc
   def to_result(cx, *args)
-    cx.instance_eval(&self)
     args.shift.to_result(cx, *args)
+    cx.instance_eval(&self)
   end
 end
 
