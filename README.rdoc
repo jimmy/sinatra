@@ -248,7 +248,7 @@ Create you own to_result
 
   class MyResultObject
     def to_result(event_context, *args)
-      event_context.body = 'This will be the body!
+      event_context.body = 'This will be the body!'
     end
   end
   
